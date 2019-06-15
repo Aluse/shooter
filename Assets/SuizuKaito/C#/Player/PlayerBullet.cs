@@ -16,7 +16,7 @@ public class PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             GameObject newBullet = Instantiate(Bullet, spawnPoint.position,
           Quaternion.identity) as GameObject;
