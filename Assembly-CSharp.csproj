@@ -59,6 +59,7 @@
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBom.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBullet.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerController.cs" />
+    <Compile Include="Assets\SuizuKaito\C#\Player\PlayerHealth.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/K018A1471/2年/Unity/2年生/Shooter/shooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -23,4 +23,5 @@ public class PlayerBullet : MonoBehaviour
             newBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, 1) * power);
         }
     }
+   
 }
