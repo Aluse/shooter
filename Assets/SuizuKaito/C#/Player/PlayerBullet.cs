@@ -7,6 +7,7 @@ public class PlayerBullet : MonoBehaviour
     public GameObject Bullet;
     public float power = 1000f;
     public Transform spawnPoint;
+    public float timer=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,13 @@ public class PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        timer += 0.1f;
+        if (Input.GetMouseButton(0)&&timer>1.0f)
         {
             GameObject newBullet = Instantiate(Bullet, spawnPoint.position,
           Quaternion.identity) as GameObject;
             newBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, 1) * power);
+            timer = 0.0f;
         }
     }
    

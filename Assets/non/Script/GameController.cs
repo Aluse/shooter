@@ -2,22 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBom : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    public int count = 0;
+    public UnityEngine.UI.Text scoreLabel;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(1) && count <= 3)
-        {
-            Destroy(GameObject.FindWithTag("EnemyBullet"));
-        }
+        int count = GameObject.FindGameObjectsWithTag("remain").Length;
+        scoreLabel.text = count.ToString();
     }
-
 }

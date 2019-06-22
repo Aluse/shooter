@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHelth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 3;
     public int currentHealth;
@@ -18,7 +18,7 @@ public class PlayerHelth : MonoBehaviour
     {
         if (currentHealth <= 0 && !isDead)
         {
-            Destroy(gameObject);
+            Death();
         }
     }
     void Death()
@@ -34,4 +34,5 @@ public class PlayerHelth : MonoBehaviour
         }
     }
 }
+
 
