@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
-    public int Rm;
+    public static int Rm;
     Text text;
     // Start is called before the first frame update
     void Awake()

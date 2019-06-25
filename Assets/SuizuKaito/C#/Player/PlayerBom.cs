@@ -16,7 +16,7 @@ public class PlayerBom : MonoBehaviour
     {
         if (Input.GetMouseButton(1) && count <= 3)
         {
-            Destroy(GameObject.FindWithTag("EnemyBullet"));
+            Destroy(GameObject.FindWithTag("Enemy"));
         }
     }
 
