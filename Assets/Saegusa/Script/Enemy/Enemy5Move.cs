@@ -6,11 +6,11 @@ public class Enemy5Move : MonoBehaviour
 {
     private Vector3 Move;
     private bool DeadFlag;
-    public GameObject Aitem;
+    public GameObject Aitem1;
     // Start is called before the first frame update
     void Start()
     {
-        Move = Vector3.back;
+        Move = new Vector3(0, 0, 1);
         DeadFlag = false;
     }
 
@@ -37,7 +37,7 @@ public class Enemy5Move : MonoBehaviour
         if (collision.gameObject.tag == "PlayerBullet")
         {
             DeadFlag = true;
-            Instantiate(Aitem, transform.position, Quaternion.identity);
+            Instantiate(Aitem1, transform.position, Quaternion.identity);
         }
     }
 }

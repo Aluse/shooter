@@ -9,6 +9,9 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Enemy2;
     public GameObject Enemy3;
     public GameObject Enemy4;
+    public GameObject Enemy5;
+    public GameObject Enemy6;
+
     List<int> enemyTyp;//敵の種類を指定するための数字
    // private bool SpawnFlug;//スポーンしたらtrueになる
     List<Object> EnemyList;                       
@@ -70,6 +73,195 @@ public class EnemySpawn : MonoBehaviour
         StartCoroutine(Corutine_Spawn(14, Enemy3, 3));
         StartCoroutine(Corutine_Spawn(15, Enemy3, 3));
         StartCoroutine(Corutine_Spawn(16, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(17, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(18, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(19, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(20, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(20, Enemy1, 3));
+
+        StartCoroutine(Corutine_Spawn(20, Enemy1, 0));
+        StartCoroutine(Corutine_Spawn(20, Enemy5, 1));
+        StartCoroutine(Corutine_Spawn(20, Enemy1, 2));
+        StartCoroutine(Corutine_Spawn(20, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(20, Enemy1, 4));
+
+        StartCoroutine(Corutine_Spawn(21, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(21, Enemy6, 4));
+        StartCoroutine(Corutine_Spawn(22, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(23, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(24, Enemy3, 2));
+        StartCoroutine(Corutine_Spawn(25, Enemy3, 1));
+        StartCoroutine(Corutine_Spawn(26, Enemy4, 4));
+        StartCoroutine(Corutine_Spawn(27, Enemy4, 0));
+        StartCoroutine(Corutine_Spawn(27, Enemy1, 4));
+        StartCoroutine(Corutine_Spawn(27, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(28, Enemy5, 2));
+        StartCoroutine(Corutine_Spawn(28, Enemy3, 4));
+        StartCoroutine(Corutine_Spawn(29, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(30, Enemy1, 1));
+
+        StartCoroutine(Corutine_Spawn(31, Enemy1, 0));
+        StartCoroutine(Corutine_Spawn(31, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(32, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(32, Enemy1, 4));
+        StartCoroutine(Corutine_Spawn(33, Enemy3, 3));
+        StartCoroutine(Corutine_Spawn(34, Enemy4, 3));
+        StartCoroutine(Corutine_Spawn(34, Enemy5, 4));
+        StartCoroutine(Corutine_Spawn(35, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(36, Enemy3, 1));
+        StartCoroutine(Corutine_Spawn(37, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(37, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(38, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(38, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(39, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(39, Enemy3, 4));
+        StartCoroutine(Corutine_Spawn(39, Enemy4, 2));
+        StartCoroutine(Corutine_Spawn(40, Enemy6, 3));
+
+        StartCoroutine(Corutine_Spawn(41, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(41, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(42, Enemy2, 1));
+        StartCoroutine(Corutine_Spawn(42, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(43, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(44, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(45, Enemy3, 4));
+        StartCoroutine(Corutine_Spawn(45, Enemy1, 0));
+        StartCoroutine(Corutine_Spawn(45, Enemy3, 0));
+        StartCoroutine(Corutine_Spawn(46, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(46, Enemy6, 2));
+        StartCoroutine(Corutine_Spawn(46, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(47, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(47, Enemy3, 3));
+        StartCoroutine(Corutine_Spawn(47, Enemy5, 1));
+        StartCoroutine(Corutine_Spawn(48, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(48, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(48, Enemy2, 1));
+        StartCoroutine(Corutine_Spawn(49, Enemy2, 1));
+        StartCoroutine(Corutine_Spawn(49, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(50, Enemy1, 1));
+
+        StartCoroutine(Corutine_Spawn(51, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(51, Enemy6, 4));
+        StartCoroutine(Corutine_Spawn(52, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(53, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(54, Enemy3, 2));
+        StartCoroutine(Corutine_Spawn(55, Enemy3, 1));
+        StartCoroutine(Corutine_Spawn(56, Enemy4, 4));
+        StartCoroutine(Corutine_Spawn(57, Enemy4, 0));
+        StartCoroutine(Corutine_Spawn(57, Enemy1, 4));
+        StartCoroutine(Corutine_Spawn(57, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(58, Enemy5, 2));
+        StartCoroutine(Corutine_Spawn(58, Enemy3, 4));
+        StartCoroutine(Corutine_Spawn(59, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+
+        StartCoroutine(Corutine_Spawn(61, Enemy3, 0));
+        StartCoroutine(Corutine_Spawn(61, Enemy3, 3));
+        StartCoroutine(Corutine_Spawn(61, Enemy4, 2));
+        StartCoroutine(Corutine_Spawn(61, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(62, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(62, Enemy2, 1));
+        StartCoroutine(Corutine_Spawn(63, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(63, Enemy5, 2));
+        StartCoroutine(Corutine_Spawn(64, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(64, Enemy1, 4));
+        StartCoroutine(Corutine_Spawn(65, Enemy3, 2));
+        StartCoroutine(Corutine_Spawn(66, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(67, Enemy2, 0));
+        StartCoroutine(Corutine_Spawn(68, Enemy2, 1));
+        StartCoroutine(Corutine_Spawn(68, Enemy4, 0));
+        StartCoroutine(Corutine_Spawn(68, Enemy6, 1));
+        StartCoroutine(Corutine_Spawn(69, Enemy3, 2));
+        StartCoroutine(Corutine_Spawn(69, Enemy4, 1));
+        StartCoroutine(Corutine_Spawn(69, Enemy4, 0));
+        StartCoroutine(Corutine_Spawn(69, Enemy2, 2));
+        StartCoroutine(Corutine_Spawn(69, Enemy2, 4));
+        StartCoroutine(Corutine_Spawn(69, Enemy2, 3));
+        StartCoroutine(Corutine_Spawn(70, Enemy1, 0));
+        StartCoroutine(Corutine_Spawn(70, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(70, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(70, Enemy1, 2));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 2));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 4));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 2));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 2));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 3));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
 
     }
 
@@ -77,20 +269,20 @@ public class EnemySpawn : MonoBehaviour
     {
         yield return new WaitForSeconds(Limittime);
 
-        Instantiate(Enemy, Pos[Type], Quaternion.identity);
+       // Instantiate(Enemy, Pos[Type],Quaternion.identity);
+        Instantiate(Enemy, Pos[Type], Quaternion.Euler(0,180,0));
 
-       
     }
 
 
 
     Vector3[] Pos = new Vector3[]
     {
-        new Vector3(-15,1,25),//Pos[0]からPos[4]まではEnemy1とEnemy2用  Pos[0]はEnemy4 も使える
-        new Vector3(-13,1,25),//Pos[1]はEnemy4も使える
+        new Vector3(-19,1,25),//Pos[0]からPos[4]まではEnemy1とEnemy2用  Pos[0]はEnemy4 も使える
+        new Vector3(-10,1,25),//Pos[1]はEnemy4も使える
         new Vector3(0,1,25),//Pos[2]はEnemy3,Enemy4も使える
-        new Vector3(13,1,25),//Pos[3]はEnemy3も使える
-        new Vector3(15,1,25),//Pos[4]はEnemy3も使える
+        new Vector3(10,1,25),//Pos[3]はEnemy3も使える
+        new Vector3(19,1,25),//Pos[4]はEnemy3も使える
 
     };
     // Update is called once per frame

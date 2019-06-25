@@ -10,7 +10,7 @@ public class Enemy1Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Move = Vector3.back;
+        Move = new Vector3(0, 0, 1);
         DeadFlag = false;
     }
 

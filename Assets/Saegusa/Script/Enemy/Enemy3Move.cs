@@ -19,7 +19,7 @@ public class Enemy3Move : MonoBehaviour
     void Start()
     {
         time = 0;
-        Move = Vector3.back;
+        Move = new Vector3(0, 0, 1);
         DeadFlag = false;
     }
 
@@ -54,7 +54,7 @@ public class Enemy3Move : MonoBehaviour
         }
         else if (time >= 15)
         {
-            Move = new Vector3(0, 0, 1);
+            Move = new Vector3(0, 0, -1);
             this.gameObject.transform.Translate(Move * 0.1f);
         }
         if (this.gameObject.transform.position.z >= 30)

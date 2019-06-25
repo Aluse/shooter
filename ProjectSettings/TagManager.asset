@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Item
+  - remain
+  - Enemy
+  - EnemyBullet
+  - Aitem1
+  - Aitem2
   layers:
   - Default
   - TransparentFX
