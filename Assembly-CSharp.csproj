@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\non\Script\GameController.cs" />
+    <Compile Include="Assets\non\Script\PlayerManager.cs" />
     <Compile Include="Assets\SuizuKaito\C#\HitBullet.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBom.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBullet.cs" />
