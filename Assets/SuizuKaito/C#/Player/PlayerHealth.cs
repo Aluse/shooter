@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == ("Enemy") || collision.gameObject.tag == ("EnemyBullet"))
         {
+            //PlayerManager.Rm = currentHealth;
             currentHealth -= 1;
         }
     }
