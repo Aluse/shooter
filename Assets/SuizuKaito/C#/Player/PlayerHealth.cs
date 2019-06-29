@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public float timer = 0.0f;
     bool isDead;
+    
     public bool invincible;
     // Start is called before the first frame update
     void Start()
@@ -34,7 +36,8 @@ public class PlayerHealth : MonoBehaviour
     void Death()
     {
         isDead = true;
-        Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
+
     }
     void OnCollisionEnter(Collision collision)
     {
