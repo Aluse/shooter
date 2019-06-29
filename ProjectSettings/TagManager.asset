@@ -7,6 +7,8 @@ TagManager:
   - remain
   - Enemy
   - Player Bullet
+  - AItem1
+  - AItem2
   layers:
   - Default
   - TransparentFX

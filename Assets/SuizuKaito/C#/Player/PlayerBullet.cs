@@ -8,7 +8,7 @@ public class PlayerBullet : MonoBehaviour
     public float power = 1000f;
     public Transform spawnPoint;
     public float timer=0;
-    bool diffusion;
+    public bool diffusion;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +27,12 @@ public class PlayerBullet : MonoBehaviour
             newBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, 1) * power);
             if (diffusion)
             {
-                GameObject newRightBullet = Instantiate(Bullet, spawnPoint.position - new Vector3(1, 0, 0),
+                GameObject newRightBullet = Instantiate(Bullet, spawnPoint.position + new Vector3(1.5f, 0, 0),
           Quaternion.identity) as GameObject;
-                newRightBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, 1) * power);
-                GameObject newLeftBullet = Instantiate(Bullet, spawnPoint.position - new Vector3(-1, 0, 0),
+                newRightBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0.5f, 0, 1) * power);
+                GameObject newLeftBullet = Instantiate(Bullet, spawnPoint.position + new Vector3(-1.5f, 0, 0),
           Quaternion.identity) as GameObject;
-                newLeftBullet.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, 1) * power);
+                newLeftBullet.GetComponent<Rigidbody>().AddForce(new Vector3(-0.5f, 0, 1) * power);
 
             }
             timer = 0.0f;
@@ -41,7 +41,7 @@ public class PlayerBullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        collision.gameObject.tag = "AItem1";
+        if(collision.gameObject.tag == "AItem1")
         {
             diffusion = true;
         }

@@ -6,7 +6,9 @@ public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 3;
     public int currentHealth;
+    public float timer = 0.0f;
     bool isDead;
+    public bool invincible;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Death();
         }
+        if (invincible && timer <= 3.0f)
+        {
+            timer += 0.1f;
+            if (timer >= 3.0f)
+            {
+                invincible = false;
+            }
+        }
     }
     void Death()
     {
@@ -30,8 +40,16 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == ("Enemy") || collision.gameObject.tag == ("EnemyBullet"))
         {
-            currentHealth -= 1;
-            PlayerManager.Rm = currentHealth;
+            if (!invincible)
+            {
+                currentHealth -= 1;
+                PlayerManager.Rm = currentHealth;
+            }
+        }
+        if (collision.gameObject.tag == ("AItem2"))
+        {
+            invincible=true;
+            timer = 0.0f;
         }
     }
 }
