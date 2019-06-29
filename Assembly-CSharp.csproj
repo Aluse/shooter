@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\non\Script\GameController.cs" />
     <Compile Include="Assets\Saegusa\Script\Aitem.cs" />
+    <Compile Include="Assets\Saegusa\Script\Enemy\BossEnemyMove.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy1Move.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy2Move.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy3Move.cs" />
