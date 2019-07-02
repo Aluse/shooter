@@ -5,10 +5,10 @@ using UnityEngine;
 public class BossEnemyMove : MonoBehaviour
 {
     private Vector3 Move;
-    private bool DeadFlag;
+    
     private bool StandardPosFlag;
-    public int a;
-    public  float speed;
+    public int typ;
+    private   float speed;
     private float step;
     private float time;
     private bool SideFlag;
@@ -19,41 +19,47 @@ public class BossEnemyMove : MonoBehaviour
 
     public GameObject Player;
     private int Hp;
+    private bool AttckFlag;
+    private float RandomTime;
 
+    private bool StartFlag;
     // Start is called before the first frame update
     void Start()
     {
         Move = new Vector3(0, 0, 1);
-        DeadFlag = false;
+       
         StandardPosFlag = false;
-        a = 0;
-        speed = 2;
-        step = 2 * Time.deltaTime;
+        typ = 1;
+        speed = 50;
+        step = 10 * Time.deltaTime;
         time = 0;
         SideFlag = false;
         Hp = 50;
+        AttckFlag = false;
+        RandomTime = 0;
+        StartFlag = false;
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
-       
-
-        if(gameObject.transform.position.z>=9&&gameObject.transform.position.z<=8&&gameObject.transform.position.x<=-1&& gameObject.transform.position.x >= 1)
+       if(StartFlag==false)
         {
-            StandardPosFlag = true;
-            a = Random.Range(1, 3);
+            transform.position = Vector3.MoveTowards(this.gameObject.transform.position, new Vector3(0, 1, 8), step);
         }
+
 
         if(StandardPosFlag== true)
         {
-            switch(a)
+            switch(typ)
             {
                 case 1:
                     StandardPosFlag = false;
                     time = 0;
                     time+= Time.deltaTime;
-                    if (gameObject.transform.position.x <= 13 || gameObject.transform.position.x >= -13)
+                    if (gameObject.transform.position.x >= 13 || gameObject.transform.position.x <= -13)
                     {
                         SideFlag = !SideFlag;
                     }
@@ -92,10 +98,51 @@ public class BossEnemyMove : MonoBehaviour
 
                     break;
                 case 3:
+                    StandardPosFlag = false;
+                    time = 0;
+                    time += Time.deltaTime;
+                    if (AttckFlag==false)
+                    {
+                        transform.position = Vector3.MoveTowards(this.gameObject.transform.position, Player.transform.position, step);
+                    }
+                    
+                    if(time==5)
+                    {
+                        transform.position = Vector3.MoveTowards(this.gameObject.transform.position, new Vector3(0, 1, 8), step);
+                    }
                     break;
             }
         }
 
         
+    }
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "PlayerBullet")
+        {
+            Hp--;
+        }
+        if(collision.gameObject.tag=="Player")
+        {
+            Hp--;
+            AttckFlag = true;
+            transform.position = Vector3.MoveTowards(this.gameObject.transform.position, new Vector3(0, 1, 8), step);
+        }
+
+        if (collision.gameObject.tag == "BossBasePos")
+        {
+            RandomTime += Time.deltaTime;
+            StartFlag = true;
+            StandardPosFlag = true;
+            if (RandomTime == 3)
+            {
+                typ = Random.Range(1, 3);
+                RandomTime = 0;
+            }
+
+            AttckFlag = false;
+        }
     }
 }
