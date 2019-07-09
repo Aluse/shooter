@@ -750,7 +750,11 @@ GameObject:
   - component: {fileID: 4605779188544514601}
   - component: {fileID: 8942567291054567262}
   - component: {fileID: 3226671711635460864}
+<<<<<<< HEAD
   - component: {fileID: 7465673554009141509}
+=======
+  - component: {fileID: 8294860125953292507}
+>>>>>>> origin/saetaka
   m_Layer: 0
   m_Name: Enemy2_K
   m_TagString: Enemy
@@ -823,7 +827,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gan: {fileID: 3427798717045756615, guid: 1f5367b066b3ff94dab7aef3febfe5d7, type: 3}
+<<<<<<< HEAD
 --- !u!54 &7465673554009141509
+=======
+--- !u!54 &8294860125953292507
+>>>>>>> origin/saetaka
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

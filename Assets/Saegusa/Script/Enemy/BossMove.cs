@@ -1,10 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.SceneManagement;
 
 public class BossMove : MonoBehaviour
 {
+=======
+
+public class BossMove : MonoBehaviour
+{
+    
+>>>>>>> origin/saetaka
     private bool StandardPosFlag;//最初に出てきたとき初期位置に移動できたかの確認
     private int Hp;
     private float step;//移動するまでの時間
@@ -27,7 +34,11 @@ public class BossMove : MonoBehaviour
     void Start()
     {
         step = 10 * Time.deltaTime;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/saetaka
         StandardPosFlag = false;
         Hp = 20;
         SideFlag = false;
@@ -35,7 +46,11 @@ public class BossMove : MonoBehaviour
         // typ = Random.Range(1, 2);//3は今は使えないからあとあと実装
         typ = 1;//1以外いまはつかえない
         backtime = 20 * Time.deltaTime;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> origin/saetaka
     }
 
     // Update is called once per frame
@@ -45,15 +60,26 @@ public class BossMove : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(this.gameObject.transform.position, new Vector3(0, 1, 5), step);
         }
+<<<<<<< HEAD
         else if (StandardPosFlag == true)
+=======
+        else if(StandardPosFlag == true)
+>>>>>>> origin/saetaka
         {
             switch (typ)
             {
                 case 1:
+<<<<<<< HEAD
 
 
                     time += Time.deltaTime;
 
+=======
+                  
+                    
+                    time += Time.deltaTime;
+                   
+>>>>>>> origin/saetaka
 
                     if (time >= 5)
                     {
@@ -69,11 +95,19 @@ public class BossMove : MonoBehaviour
                     break;
 
                 case 2:
+<<<<<<< HEAD
 
 
                     time += Time.deltaTime;
 
 
+=======
+                    
+                   
+                    time += Time.deltaTime;
+
+                   
+>>>>>>> origin/saetaka
 
                     if (time >= 5)
                     {
@@ -95,12 +129,21 @@ public class BossMove : MonoBehaviour
 
                     break;
                 case 3:
+<<<<<<< HEAD
 
 
                     time += Time.deltaTime;
                     AttckFlag = false;
 
                     if (AttckFlag == true)
+=======
+                   
+                    
+                    time += Time.deltaTime;
+                    AttckFlag = false;
+
+                    if (AttckFlag==true)
+>>>>>>> origin/saetaka
                     {
                         time = 0;
                         transform.position = Vector3.MoveTowards(this.gameObject.transform.position, new Vector3(0, 1, 5), step);
@@ -115,22 +158,36 @@ public class BossMove : MonoBehaviour
         }
 
         Gantime += Time.deltaTime;
+<<<<<<< HEAD
         if (Gantime >= 0.5f)
+=======
+        if(Gantime>=0.5f)
+>>>>>>> origin/saetaka
         {
             Instantiate(Gan, transform.position, Quaternion.identity);
             Gantime = 0;
         }
 
+<<<<<<< HEAD
         if (Hp <= 0)
         {
             Destroy(this.gameObject);
             SceneManager.LoadScene("GameClear");
+=======
+        if(Hp<=0)
+        {
+            Destroy(this.gameObject);
+>>>>>>> origin/saetaka
         }
     }
 
     void OnCollisionEnter(Collision collision)
     {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/saetaka
 
         if (collision.gameObject.tag == "BossBasePos")
         {

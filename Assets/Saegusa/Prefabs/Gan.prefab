@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 3334415709650615977}
   - component: {fileID: 8742711905210339624}
   - component: {fileID: 3762467588856318415}
+<<<<<<< HEAD
   - component: {fileID: 6908818141076432670}
+=======
+  - component: {fileID: 8820978562705879386}
+>>>>>>> origin/saetaka
   m_Layer: 0
   m_Name: Gan
   m_TagString: EnemyBullet
@@ -105,7 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90abed97325a78f47a96f79daa62760f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!54 &6908818141076432670
+=======
+--- !u!54 &8820978562705879386
+>>>>>>> origin/saetaka
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

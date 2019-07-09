@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 7758620864205369209}
   - component: {fileID: 713751566964770941}
   - component: {fileID: 3761094572628277390}
+<<<<<<< HEAD
   - component: {fileID: 1352599887863319788}
+=======
+  - component: {fileID: 8831849524727748327}
+>>>>>>> origin/saetaka
   m_Layer: 0
   m_Name: Aitem2
   m_TagString: Aitem2
@@ -105,7 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f540732da849149a3bd078ab67da12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!54 &1352599887863319788
+=======
+--- !u!54 &8831849524727748327
+>>>>>>> origin/saetaka
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

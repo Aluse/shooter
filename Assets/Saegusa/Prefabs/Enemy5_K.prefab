@@ -57,7 +57,11 @@ GameObject:
   - component: {fileID: 2639020128404540864}
   - component: {fileID: 2915788320402572443}
   - component: {fileID: 743939130731156360}
+<<<<<<< HEAD
   - component: {fileID: 8941533917832749994}
+=======
+  - component: {fileID: 831970365294473459}
+>>>>>>> origin/saetaka
   m_Layer: 0
   m_Name: Enemy5_K
   m_TagString: Enemy
@@ -152,7 +156,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Aitem1: {fileID: 8759154073170015915, guid: 513ec39d6d9f1904b976685f5e969508, type: 3}
+<<<<<<< HEAD
 --- !u!54 &8941533917832749994
+=======
+--- !u!54 &831970365294473459
+>>>>>>> origin/saetaka
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +174,11 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
+<<<<<<< HEAD
   m_Constraints: 126
+=======
+  m_Constraints: 118
+>>>>>>> origin/saetaka
   m_CollisionDetection: 0
 --- !u!1 &2652122939406222466
 GameObject:

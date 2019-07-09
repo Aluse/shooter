@@ -63,6 +63,7 @@
     <Compile Include="Assets\non\Script\GameController.cs" />
     <Compile Include="Assets\non\Script\PlayerManager.cs" />
     <Compile Include="Assets\Saegusa\Script\Aitem.cs" />
+    <Compile Include="Assets\Saegusa\Script\Enemy\BossEnemyMove.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\BossMove.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy1Move.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy2Move.cs" />
