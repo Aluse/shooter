@@ -11,6 +11,8 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Enemy4;
     public GameObject Enemy5;
     public GameObject Enemy6;
+    public GameObject BossEnemy;
+    public GameObject Player;
 
     List<int> enemyTyp;//敵の種類を指定するための数字
    // private bool SpawnFlug;//スポーンしたらtrueになる
@@ -53,6 +55,8 @@ public class EnemySpawn : MonoBehaviour
         //Spawn(1, Enemy2, 2,SpawnFlug);
         //Spawn(1, Enemy2, 0,SpawnFlug);
         //Invoke("Spawn", 10);
+
+        StartCoroutine(Corutine_Spawn(0, Player, 5));//試し
         StartCoroutine(Corutine_Spawn(1, Enemy1, 0));
         StartCoroutine(Corutine_Spawn(2, Enemy1, 1));
         StartCoroutine(Corutine_Spawn(3, Enemy1, 2));
@@ -238,30 +242,30 @@ public class EnemySpawn : MonoBehaviour
         StartCoroutine(Corutine_Spawn(96, Enemy1, 1));
         StartCoroutine(Corutine_Spawn(96, Enemy4, 3));
         StartCoroutine(Corutine_Spawn(96, Enemy2, 4));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        StartCoroutine(Corutine_Spawn(98, BossEnemy, 2));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
 
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
-        StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
+        //StartCoroutine(Corutine_Spawn(60, Enemy1, 1));
 
     }
 
@@ -283,6 +287,7 @@ public class EnemySpawn : MonoBehaviour
         new Vector3(0,1,25),//Pos[2]はEnemy3,Enemy4も使える
         new Vector3(10,1,25),//Pos[3]はEnemy3も使える
         new Vector3(19,1,25),//Pos[4]はEnemy3も使える
+        new Vector3(1,1,2),//プレイヤー用の座標
 
     };
     // Update is called once per frame

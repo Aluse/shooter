@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7758620864205369209}
   - component: {fileID: 713751566964770941}
   - component: {fileID: 3761094572628277390}
+  - component: {fileID: 1352599887863319788}
   m_Layer: 0
   m_Name: Aitem2
   m_TagString: Aitem2
@@ -104,3 +105,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f540732da849149a3bd078ab67da12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1352599887863319788
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636121420016942244}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

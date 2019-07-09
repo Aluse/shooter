@@ -15,18 +15,19 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         currentHealth = startingHealth;
+        invincible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentHealth <= 0 && !isDead)
+        if (currentHealth <= 0/* && !isDead*/)
         {
             Death();
         }
         if (invincible && timer <= 3.0f)
         {
-            timer += 0.1f;
+            timer += Time.deltaTime;
             if (timer >= 3.0f)
             {
                 invincible = false;
@@ -43,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == ("Enemy") || collision.gameObject.tag == ("EnemyBullet"))
         {
-            if (!invincible)
+            if (!invincible)//透明じゃないとき
             {
                 currentHealth -= 1;
                 PlayerManager.Rm = currentHealth;

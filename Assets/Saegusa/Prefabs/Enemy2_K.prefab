@@ -750,6 +750,7 @@ GameObject:
   - component: {fileID: 4605779188544514601}
   - component: {fileID: 8942567291054567262}
   - component: {fileID: 3226671711635460864}
+  - component: {fileID: 7465673554009141509}
   m_Layer: 0
   m_Name: Enemy2_K
   m_TagString: Enemy
@@ -822,6 +823,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gan: {fileID: 3427798717045756615, guid: 1f5367b066b3ff94dab7aef3febfe5d7, type: 3}
+--- !u!54 &7465673554009141509
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7227613259095162840}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &7227701366590979374
 GameObject:
   m_ObjectHideFlags: 0

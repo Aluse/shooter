@@ -10,6 +10,9 @@ TagManager:
   - EnemyBullet
   - Aitem1
   - Aitem2
+  - AItem1
+  - AItem2
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

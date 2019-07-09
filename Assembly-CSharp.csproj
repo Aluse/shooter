@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\non\Script\GameController.cs" />
+    <Compile Include="Assets\non\Script\PlayerManager.cs" />
     <Compile Include="Assets\Saegusa\Script\Aitem.cs" />
+    <Compile Include="Assets\Saegusa\Script\Enemy\BossMove.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy1Move.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy2Move.cs" />
     <Compile Include="Assets\Saegusa\Script\Enemy\Enemy3Move.cs" />
@@ -72,8 +74,11 @@
     <Compile Include="Assets\Saegusa\Script\shooter.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
     <Compile Include="Assets\SuizuKaito\C#\HitBullet.cs" />
+    <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBom.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerBullet.cs" />
     <Compile Include="Assets\SuizuKaito\C#\Player\PlayerController.cs" />
+    <Compile Include="Assets\SuizuKaito\C#\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\SuizuKaito\C#\Player\PlayerMouseController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/K018A1463/Gorira/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

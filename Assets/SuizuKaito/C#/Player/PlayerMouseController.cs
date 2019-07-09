@@ -9,7 +9,9 @@ public class PlayerMouseController : MonoBehaviour
     void Update()
     {
         Vector3 touchScreenPosition = Input.mousePosition;
-        touchScreenPosition.z = 20;//カメラとの距離
+        //touchScreenPosition.z = 20;//カメラとの距離
+        touchScreenPosition.z = 42;//カメラとの距離
+
 
         Camera gamecamera = Camera.main;
         Vector3 touchWorldPosition = gamecamera.ScreenToWorldPoint(touchScreenPosition);

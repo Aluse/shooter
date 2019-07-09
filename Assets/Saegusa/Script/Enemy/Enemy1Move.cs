@@ -33,7 +33,7 @@ public class Enemy1Move : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "PlayerBullet")
+        if (collision.gameObject.tag == "PlayerBullet"||collision.gameObject.tag=="Player")
         {
             DeadFlag = true;
         }
